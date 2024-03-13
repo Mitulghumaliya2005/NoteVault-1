@@ -29,7 +29,10 @@ export default function SignIn() {
         async function getdata(){
             try{
                 let response = await axios.get(URL+`/sign-in?email=${user.username}&password=${user.password}`);
-                console.log(response)
+                localStorage.setItem('token', response.data.token);
+                const token = (localStorage.getItem('token'))
+                console.log(token);
+                // console.log(response)
             }
             catch(err){
                 console.log(err);

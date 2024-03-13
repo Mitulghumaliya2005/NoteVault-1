@@ -29,7 +29,10 @@ export default function SignUp() {
         try{
             async function getdata(){
                 let response = await axios.get(URL+`/sign-up?email=${user.username}&password=${user.password}`); 
-                console.log(response)
+                // console.log(response);
+                localStorage.setItem('token', response.data.token);
+                const token = (localStorage.getItem('token'))
+                console.log(token);
             }
             getdata();
         }

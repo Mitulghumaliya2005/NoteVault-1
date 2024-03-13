@@ -25,7 +25,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/NoteVaultDB")
 })
 
 
-app.post("/api/auth", (req, res) => {
+app.get("/api/auth", (req, res) => {
     try {
         const a = jwt.verify(req.query.token, jwt_secret);
         User.findOne({id:a.id}).then((result)=>{

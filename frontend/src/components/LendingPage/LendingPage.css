@@ -1,0 +1,115 @@
+
+.main_fun{
+    padding-top: 10%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+
+.main-card{
+    background-color: white;
+}
+
+.card_title{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+
+
+.fun_img{
+    height: 64px;
+    width: 64px;
+}
+
+.fun h4{
+    font-size: 30px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+@media (max-width:900px) {
+    .main_fun{
+        display: block;
+        text-align: center;
+    }
+}
+
+.fun p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: .01em;
+    margin: 0;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.main_con {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: antiquewhite;
+}
+
+.con{
+    text-align: center;
+}
+
+.con h1{
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.con p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.con div {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.con button{
+    width: 170px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.con button a{
+    text-decoration: none;
+}
+
+.con button a{
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    text-align: center;
+}
+
+@media (max-width:600px) {
+    .con h1{
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 60px;
+    }
+    .con p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+}
+

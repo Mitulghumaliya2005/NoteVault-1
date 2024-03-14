@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import LendingPage from "./LendingPage/LendingPage";
 import { useUserInfo } from "../contexts/Login"
 import Compose from "./Compose/Compose"
 import Navbar from "./Navbar/Navbar"
@@ -39,6 +40,7 @@ export default function App() {
                     <Note/>
                 </>
             }
+            <LendingPage/>
         </div>
     )
 }

@@ -6,14 +6,13 @@ import { v4 as uuidv4 } from 'uuid';
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import 'dotenv/config'
-
+// 1.5 weeky dowl, security breach , # ,json web token create
 const jwt_secret = "Kelvin@147"
 const app = express();
 app.use(cors());
 
 // const saltRounds = process.env.SALT_ROUNDS;
 const saltRounds = 10;
-
 
 
 mongoose.connect("mongodb://127.0.0.1:27017/NoteVaultDB")

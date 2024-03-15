@@ -1,4 +1,5 @@
 import './LendingPage.css';
+import { Link } from 'react-router-dom'
 
 // img import
 // import forbes from "../../assets/LendingPage_Img/forbes.avif";
@@ -10,6 +11,7 @@ import './LendingPage.css';
 import letter from "../../assets/LendingPage_Img/letter.png";
 import update from "../../assets/LendingPage_Img/update.png";
 import clipboard from "../../assets/LendingPage_Img/clipboard.png";
+// import content from "../../assets/LendingPage_Img/content.avif"
 
 export default function LendingPage() {
     return (
@@ -19,8 +21,8 @@ export default function LendingPage() {
                     <h1>Tame your work<br/>organize your life</h1>
                     <p>Remember everything and tackle any project with your notes,<br/>tasks, and schedule all in one place.</p>
                     <div>
-                        <button><a href='#'>Sign In</a></button>
-                        <button><a href='#'>Sign Up</a></button>
+                        <button><a href='/sign-in'>Sign In</a></button>
+                        <button><a href='/sign-up'>Sign Up</a></button>
                     </div>
                     <br/>
                     
@@ -49,8 +51,19 @@ export default function LendingPage() {
 
                 </div>
             </div>
-            <div>
 
+            <div className='main_content'>
+                <div className='content'>
+                    <div className='copyright'>
+                        <p>© 2024 NoteVault Corporation. All rights reserved.</p>
+                    </div>
+                    {/* <div className='info'>
+                        <p>Cookie Preferences</p>
+                        <p>Security</p>
+                        <p>Legal</p>
+                        <p>privacy</p>
+                    </div> */}
+                </div>
             </div>
         </div>
     )
